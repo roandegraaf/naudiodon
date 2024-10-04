@@ -61,7 +61,6 @@ PaContext::PaContext(napi_env env, napi_value inOptions, napi_value outOptions)
     return;
   }    
 
-  printf("%s\n", Pa_GetVersionInfo()->versionText);
   if (mInOptions)
     printf("Input %s\n", mInOptions->toString().c_str());
   if (mOutOptions)
